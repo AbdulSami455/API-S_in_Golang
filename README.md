@@ -1,9 +1,9 @@
  #API-S_in_Golang
 
-**Web Sockets**
+***Web Sockets***
 
-**Rest API**
+***Rest API***
 
-**GraphQl**
+***GraphQl***
 
-**GRPC**
+***GRPC***
