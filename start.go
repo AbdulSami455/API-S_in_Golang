@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//Struct for data saving 
 type Portfolio struct {
 	PID           string `json:"PID"`
 	PortfolioName string `json:"portfolioname"`
