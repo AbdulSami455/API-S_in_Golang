@@ -7,11 +7,13 @@ import (
 	"github.com/gorilla/websocket"
 )
 
+//Upgrader Variable
 var upgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
 	WriteBufferSize: 1024,
 }
 
+//Handle WebSockets
 func handleWebSocketConnection(w http.ResponseWriter, r *http.Request) {
 	conn, err := upgrader.Upgrade(w, r, nil)
 	if err != nil {
@@ -45,6 +47,7 @@ func handleWebSocketConnection(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//Main Function
 func main() {
 	http.HandleFunc("/ws", handleWebSocketConnection)
 	http.Handle("/", http.FileServer(http.Dir("."))) // Serve static files from the current directory
