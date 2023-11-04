@@ -10,4 +10,3 @@ GraphQL is a query language for APIs and a runtime for executing those queries b
 **gRPC in Golang:**
 gRPC is a high-performance, language-agnostic remote procedure call (RPC) framework. In Go, gRPC allows you to define services and message types using Protocol Buffers (protobuf). You can then generate client and server code to enable communication between them with strong typing and efficient serialization.
 
-Each of these technologies serves different purposes and has its own strengths. Choosing the right one depends on the specific requirements of your application, such as real-time capabilities (Web Sockets), traditional RESTful operations, flexible querying (GraphQL), or high-performance, strongly-typed RPC (gRPC).
